@@ -1,0 +1,65 @@
+/* Normalize/Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global Styles */
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Layout */
+header {
+  background-color: #333;
+  text-align: center;
+  color: white;
+  padding: 1rem;
+}
+
+main {
+  background: grey;
+  display: flex;
+  flex-direction: column;
+  justify-content:space-evenly;
+}
+
+#buttons {
+  display: flex;
+  justify-content: space-around;
+  margin: 2px;
+}
+
+/* Buttons */
+button {
+  background-color: white;
+  color: black;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: grey;
+}
+
+/* Utility Classes */
+.text-center {
+  text-align: center;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+}
