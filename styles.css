@@ -26,19 +26,38 @@ header {
 }
 
 main {
-  background: grey;
   display: flex;
-  flex-direction: column;
-  justify-content:space-evenly;
+  justify-content: center;
+  background: grey;
 }
 
-#buttons {
+.calculator {
+  background: black;
+  border-radius: 10px;
+  width: 50%;
   display: flex;
-  justify-content: space-around;
-  margin: 2px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  padding: 10px;
+}
+
+.display {
+  background: white;
+  width: 70%;
+  height: 50px;
+  margin: 10px;
 }
 
 /* Buttons */
+#buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin: 10px;
+}
+
 button {
   background-color: white;
   color: black;
