@@ -29,12 +29,13 @@ main {
   display: flex;
   justify-content: center;
   background: grey;
+  width: 100%;
 }
 
 .calculator {
   background: black;
   border-radius: 10px;
-  width: 50%;
+  width: 42%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -48,6 +49,7 @@ main {
   width: 70%;
   height: 50px;
   margin: 10px;
+  padding: 10px;
 }
 
 /* Buttons */
@@ -71,6 +73,31 @@ button:hover {
   background-color: grey;
 }
 
+/* Used grid column to fill the empty space */
+#filler {
+  background: white;
+  grid-column: span 3;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+section > mark {
+  display: inline-block;
+  background: #6c8bb2;
+  color: #d2dfef;
+  border: 1px solid #6c8bb2;
+  height: auto;
+  max-width: 100%;
+  margin: 10px;
+  padding: 10px;
+}
+
 /* Utility Classes */
 .text-center {
   text-align: center;
@@ -80,5 +107,7 @@ button:hover {
 @media (max-width: 768px) {
   body {
     font-size: 14px;
+    max-width: 100%;
+    box-sizing: border-box;
   }
 }
