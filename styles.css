@@ -35,7 +35,8 @@ main {
 .calculator {
   background: black;
   border-radius: 10px;
-  width: 42%;
+  width: 45%;
+  max-width: 350px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -84,7 +85,7 @@ button:hover {
 section {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
 }
 
 section > mark {
@@ -93,7 +94,7 @@ section > mark {
   color: #d2dfef;
   border: 1px solid #6c8bb2;
   height: auto;
-  max-width: 100%;
+  max-width: 80%;
   margin: 10px;
   padding: 10px;
 }
